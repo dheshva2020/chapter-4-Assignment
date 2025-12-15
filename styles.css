@@ -44,4 +44,8 @@ body.dark-mode {
 }
 .project{
     transition: transform 0.3s;
+}.project:hover {
+    transform: scale(1.05);
+}
+
 
