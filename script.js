@@ -75,4 +75,13 @@ fetch(`https://api.example.com/weather?lat=${latitude}&lon=${longitude}`)
                     });
             }
         );
+// add smooth scrolling to all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) { 
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
 
